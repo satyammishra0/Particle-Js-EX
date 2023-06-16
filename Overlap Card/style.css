@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+body {
+  background-color: #cad5e2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.parent-card {
+  height: max-content;
+  width: 85vh;
+  border-radius: 8px;
+  padding: 5% 6%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+  /* Child card 1 St */
+  .child-card-1 {
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    height: 40vh;
+    padding: 10% 0;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    color: White;
+
+    & > h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    & > p {
+      letter-spacing: 0.7px;
+      word-spacing: 0.9px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.2;
+      color: #e5e5e5;
+    }
+  }
+
+  .child-card-2 {
+    background-color: White;
+    padding: 5% 10%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: -30%;
+    left: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    color: rgb(43, 43, 43);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    & > h3 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 2.5;
+    }
+
+    & > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 6%;
+      border: 1px solid #ccc;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    & > img {
+      object-fit: cover;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      margin-top: 6%;
+    }
+
+    & > p {
+      color: #858585;
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+    }
+
+    & > button {
+      width: 100%;
+      height: 45px;
+      border: none;
+      outline: none;
+      color: #fff;
+      letter-spacing: 0.8px;
+      word-spacing: 1px;
+      cursor: pointer;
+      border-radius: 8px;
+      background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    }
+  }
+}
+
+.active-btn {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: greenyellow;
+  margin-right: 6px;
+}
