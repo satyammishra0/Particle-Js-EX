@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica", sans-serif;
+}
+
+body {
+  background-color: #036fec;
+}
+
+.parent {
+  display: grid;
+  padding: 2%;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.childDiv {
+  height: 100px;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #000;
+}
