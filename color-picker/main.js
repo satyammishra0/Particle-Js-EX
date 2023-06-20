@@ -74,15 +74,6 @@ for (let i = 0; i < totalColorCount; i++) {
   childDiv.setAttribute("class", "childDiv");
   childDiv.setAttribute("id", `childDiv${i}`);
   childDiv.innerHTML = i;
-  console.log(totalColorCount);
 }
+// console.log(totalColorCount);
 
-// Iterate over the colors
-for (let color in colors) {
-  console.log(`Now Showing ${color}`);
-  for (let i = 0; i < colors[color].length; i++) {
-    var bgColor = colors[color][i];
-    console.log(bgColor);
-    document.getElementById(`childDiv${i}`).style.backgroundColor = bgColor;
-  }
-}
