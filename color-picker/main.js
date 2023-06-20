@@ -73,6 +73,8 @@ for (let i = 0; i < totalColorCount; i++) {
   parentDiv.appendChild(childDiv);
   childDiv.setAttribute("class", "childDiv");
   childDiv.setAttribute("id", `childDiv${i}`);
+  childDiv.innerHTML = i;
+  console.log(totalColorCount);
 }
 
 // Iterate over the colors
