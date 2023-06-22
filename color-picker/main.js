@@ -76,4 +76,3 @@ for (let i = 0; i < totalColorCount; i++) {
   childDiv.innerHTML = i;
 }
 // console.log(totalColorCount);
-
