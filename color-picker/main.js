@@ -66,13 +66,13 @@ for (let color in colors) {
   totalColorCount += colors[color].length;
 }
 
-let parentDiv = document.getElementById("parent");
+let parentDiv = document.getElementById("parent"); 
 
 for (let i = 0; i < totalColorCount; i++) {
-  let childDiv = document.createElement("div");
+  let childDiv = document.createElement("div"); 
   parentDiv.appendChild(childDiv);
   childDiv.setAttribute("class", "childDiv");
   childDiv.setAttribute("id", `childDiv${i}`);
   childDiv.innerHTML = i;
 }
-// console.log(totalColorCount);
+console.log(totalColorCount);
