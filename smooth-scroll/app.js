@@ -15,9 +15,14 @@ function smoothScroll(target, duration) {
       startTime = currentTime;
     }
     var timeElapsed = currentTime - startTime;
+    var run = easeInOutSine();
   }
 
-  requestAnimationFrame(animationScroll());
+  function easeInOutSine(x) {
+    return -(Math.cos(Math.PI * x) - 1) / 2;
+  }
+
+  requestAnimationFrame(animationScroll);
 }
 
 smoothScroll(".section-2", 1000);
