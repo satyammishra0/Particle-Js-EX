@@ -16,7 +16,7 @@ function reverseString(string) {
   return string.split("").reverse().join("");
 }
 
-console.log(reverseString(string));
+// console.log(reverseString(string));
 
 // 2nd method of reverse the string
 
@@ -30,3 +30,12 @@ function reverseString2(str) {
   return reverse;
 }
 
+// console.log(reverseString2(string));
+
+// 3 rd  format to reverse the string
+
+function reverseString3(str) {
+  return Array.from(str).reduce((reversed, c) => c + reversed, "");
+}
+
+console.log(reverseString3("hello world"));
