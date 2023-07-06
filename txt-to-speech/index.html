@@ -8,12 +8,40 @@
   <body>
     <input type="text" id="text" />
     <button id="btn-speak">Speak</button>
+    <button id="pause">Pause</button>
+    <button id="cancel">Cancel</button>
     <script>
       let text = document.getElementById("text");
       let btn_speak = document.getElementById("btn-speak");
+      let pause = document.getElementById("pause");
+      let cancel = document.getElementById("cancel");
+
       btn_speak.addEventListener("click", () => {
         const speech = new SpeechSynthesisUtterance(text.value);
-        speechSynthesis.speak(speech);
+        speech.rate = 0.5;
+
+        // Listen for the 'voiceschanged' event to ensure the voices list is updated
+        speechSynthesis.onvoiceschanged = () => {
+          const voices = speechSynthesis.getVoices();
+
+          // Find a female voice
+          const femaleVoice = voices.find((voice) => voice.gender === "female");
+
+          // Set the female voice as the desired voice
+          speech.voice = femaleVoice;
+
+          // Start speech synthesis
+          speechSynthesis.speak(speech);
+        };
+
+        pause.addEventListener("click", () => {
+          const speech = new SpeechSynthesisUtterance(text.value);
+          speech.pause();
+        });
+
+        cancel.addEventListener("click", () => {
+          speech.cancel();
+        });
       });
     </script>
   </body>
