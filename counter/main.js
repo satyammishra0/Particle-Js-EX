@@ -38,3 +38,11 @@ counter.addEventListener("click", (event) => {
 
   input.value = value;
 });
+
+// Data Attribute
+
+let link = document.querySelectorAll(".links").forEach(function (event) {
+  link.addEventListener("click", function () {
+    console.log(this);
+  });
+});
