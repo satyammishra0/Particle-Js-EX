@@ -41,8 +41,8 @@ counter.addEventListener("click", (event) => {
 
 // Data Attribute
 
-let link = document.querySelectorAll(".links").forEach(function (event) {
+let link = document.querySelectorAll(".links").forEach(function (link) {
   link.addEventListener("click", function () {
-    console.log(this);
+    console.log(this.getAttribute("data-rollno"));
   });
 });

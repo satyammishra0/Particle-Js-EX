@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container flex items-center justify-center h-screen w-screen bg-teal-700 flex-col">
+
+            <div class="flex items-center justify-center gap-3">
+                <input class="py-1 w-64 px-1 border-2 outline-2 outline-slate-400 border-inherit rounded-sm" type="text"
+                    placeholder="Add a new list" id="input-field">
+                <button id="add-btn"
+                    class="px-7 py-1 bg-teal-950 text-white border-2 border-inherit rounded-sm">Add</button>
+            </div>
+
+            <div class="List px-7 py-1 border-2 rounded-sm my-5 border-teal-500 w-100">
+                <ul class="" id="list-parent">
+                    <div class="flex items-center justify-center gap-6 my-3 ">
+                        <li class="list-disc">This is the first Element </li>
+                        <button id="" class="delete-btn"
+                            class="px-7 py-1 bg-teal-950 text-white border-2 border-inherit rounded-sm">Delete
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center gap-6 my-3 ">
+                        <li class="list-disc">This is the first Element </li>
+                        <button id="" class="delete-btn"
+                            class="px-7 py-1 bg-teal-950 text-white border-2 border-inherit rounded-sm">Delete</button>
+                    </div>
+                    <div class="flex items-center justify-center gap-6 my-3 ">
+                        <li class="list-disc">This is the first Element </li>
+                        <button id="" class="delete-btn"
+                            class="px-7 py-1 bg-teal-950 text-white border-2 border-inherit rounded-sm">Delete</button>
+                    </div>
+                    <div class="flex items-center justify-center gap-6 my-3 ">
+                        <li class="list-disc">This is the first Element </li>
+                        <button id="" class="delete-btn"
+                            class="px-7 py-1 bg-teal-950 text-white border-2 border-inherit rounded-sm">Delete</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+
+
+</html>
