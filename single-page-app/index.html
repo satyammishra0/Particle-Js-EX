@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Page app</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+                font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            }
+
+            .parent {
+                grid-template-columns: 20% 1fr;
+            }
+
+        </style>
+    </head>
+
+    <body class="" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+
+        <div class="parent grid gap-4">
+            <nav class="nav flex flex-col w-100 bg-slate-900 h-screen py-10 px-4 text-white">
+                <a href="#" id="link-1" class="leading-10 text-xl font-light pb-2">Dashboard</a>
+                <a href="#" id="link-2" class="leading-10 text-xl font-light pb-2">Posts</a>
+                <a href="#" id="link-3" class="leading-10 text-xl font-light pb-2">Settings</a>
+            </nav>
+            <div class="content px-6 py-5 h-screen overflow-y-scroll">
+                <h2 class="text-2xl font-bold leading-5 mb-6">Why SQL databases are better than NoSQL Databases ?</h2>
+                <p class="text-justify" id="content-sect-1">
+                    SQL (Structured Query Language) databases and NoSQL (Not Only SQL) databases have different
+                    characteristics and are
+                    suitable for different use cases. It's important to note that the choice between SQL and NoSQL
+                    databases depends on the
+                    specific requirements of your application. However, here are some reasons why SQL databases are
+                    often considered
+                    advantageous:
+                <ul>
+                    <li class="mb-6 text-justify mt-4"><b class="font-extrabold">1. Structured Data and Schema: </b>SQL
+                        databases
+                        follow
+                        a
+                        predefined schema
+                        that
+                        enforces
+                        data
+                        consistency and structure.
+                        This structured approach ensures that data conforms to specific rules and constraints, making it
+                        easier to maintain data
+                        integrity. It also enables efficient querying and indexing of data, facilitating complex
+                        relationships between tables.
+                    </li>
+
+                    <li class="mb-6 text-justify"><b class="font-extrabold">2. ACID Compliance: </b>SQL databases are
+                        typically
+                        ACID-compliant
+                        (Atomicity,
+                        Consistency,
+                        Isolation, Durability). ACID
+                        properties guarantee that transactions are executed reliably, ensuring data integrity and
+                        consistency even in the
+                        presence of failures or concurrent access. This makes SQL databases well-suited for applications
+                        that require strict
+                        data consistency and accuracy.
+                    </li>
+
+                    <li class="mb-6 text-justify"><b class="font-extrabold">3. Strong Query Capabilities: </b>SQL
+                        databases offer a
+                        powerful and
+                        standardized query
+                        language
+                        (SQL) that allows for
+                        expressive and flexible data retrieval. SQL provides rich functionality for filtering,
+                        aggregating, joining, and
+                        manipulating data, making it easier to perform complex queries and analysis.
+                    </li>
+
+                    <li class="mb-6 text-justify"><b class="font-extrabold">4. Mature Ecosystem and Tooling: </b>SQL
+                        databases have
+                        been
+                        around
+                        for several
+                        decades,
+                        resulting
+                        in a mature ecosystem
+                        with a wide range of tools, libraries, and frameworks. This ecosystem includes robust query
+                        optimization, monitoring,
+                        and management tools, making it easier to develop, debug, and maintain SQL-based applications.
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <script type="module" src="./static/index.js"></script>
+    </body>
+
+</html>
