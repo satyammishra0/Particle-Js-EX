@@ -14,10 +14,12 @@ if (isset($_POST['email'])) {
     var_dump($result);
 }
 ?>
+
 <form method="post">
     <input type="text" name="email">
     <input type="submit" value="submit">
 </form>
 
 
+<!-- https://github.com/egulias/EmailValidator#how-to-extend -->
 <!-- https://github.com/egulias/EmailValidator#how-to-extend -->
