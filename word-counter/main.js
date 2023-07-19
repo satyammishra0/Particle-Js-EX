@@ -7,3 +7,5 @@ type_box.addEventListener("keyup", (e) => {
   let typed_letter = e.key.length + 1;
   word_count.innerHTML = typed_letter;
 });
+
+// Test commit 
